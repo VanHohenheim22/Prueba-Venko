@@ -1,11 +1,24 @@
 package com.pruebavenko.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Persona {
+    @JsonProperty("tipodocumento")
     private String tipodocumento;
+
+    @JsonProperty("numerodoc")
     private String numerodoc;
+
+    @JsonProperty("nombre")
     private String nombre;
+
+    @JsonProperty("apellido")
     private String apellido;
+
+    @JsonProperty("fechaexpedicion")
     private String fechaexpedicion;
+
+    @JsonProperty("tipopersona")
     private String tipopersona;
 
 
@@ -23,52 +36,63 @@ public class Persona {
 
 
 
-    public void setTipoDoc(String tipodocumento) {
-        this.tipodocumento = tipodocumento;
-    }
-
-
+    @JsonProperty("tipodocumento")
     public String getTipoDocumento() {
         return tipodocumento;
     }
 
-    public void setNumdoc(String numerodoc) {
-        this.numerodoc = numerodoc;
+    @JsonProperty("tipodocumento")
+    public void setTipoDocumento(String tipodocumento) {
+        this.tipodocumento = tipodocumento;
     }
 
+    @JsonProperty("numerodoc")
     public String getNumDoc() {
         return numerodoc;
     }
 
-    public void setName(String nombre) {
-        this.nombre = nombre;
+    @JsonProperty("numerodoc")
+    public void setNumDoc(String numerodoc) {
+        this.numerodoc = numerodoc;
     }
 
-    public String getNamec() {
+    @JsonProperty("nombre")
+    public String getNombre() {
         return nombre;
     }
 
-    public void setApeliido(String apellido) {
-        this.apellido = apellido;
+    @JsonProperty("nombre")
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public String getApeliido() {
+    @JsonProperty("apellido")
+    public String getApellido() {
         return apellido;
     }
 
-    public void setFexhaExp(String fechaexpedicion) {
-        this.fechaexpedicion = fechaexpedicion;
+    @JsonProperty("apellido")
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
     }
 
-    public String getFexhaExp() {
+    @JsonProperty("fechaexpedicion")
+    public String getFechaExpedicion() {
         return fechaexpedicion;
     }
 
-    public void setTipoPer(String tipopersona) {
-        this.tipopersona = tipopersona;
+    @JsonProperty("fechaexpedicion")
+    public void setFechaExpedicion(String fechaexpedicion) {
+        this.fechaexpedicion = fechaexpedicion;
     }
 
-    public String getTipoPer() {
+    @JsonProperty("tipopersona")
+    public String getTipoPersona() {
         return tipopersona;
+    }
+
+    @JsonProperty("tipopersona")
+    public void setTipoPersona(String tipopersona) {
+        this.tipopersona = tipopersona;
     }
 }

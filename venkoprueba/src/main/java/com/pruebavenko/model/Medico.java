@@ -5,13 +5,12 @@ public class Medico extends Persona {
 
     public Medico() {}
 
-    public Medico ( String tipodocumento, String numerodoc,  String nombre, String apellido, String fechaexpedicion, String tipopersona, String especialidad) {
+    public Medico(String tipodocumento, String numerodoc, String nombre, String apellido, String fechaexpedicion, String tipopersona, String especialidad) {
         super(tipodocumento, numerodoc, nombre, apellido, fechaexpedicion, tipopersona);
-
         this.especialidad = especialidad;
     }
 
-    public void setEspecialidad( String especialidad) {
+    public void setEspecialidad(String especialidad) {
         this.especialidad = especialidad;
     }
 
@@ -19,3 +18,4 @@ public class Medico extends Persona {
         return especialidad;
     }
 }
+
